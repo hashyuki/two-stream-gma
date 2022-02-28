@@ -1,6 +1,10 @@
 # Automated Classification of General Movements in Infants Using Two-stream Spatiotemporal Fusion Network
 ---
 
+## Overview
+ <img src=img/overview.png><br>
+ **Fig. 1.** Overview of the proposed GMs classification method<br>
+
 ## folder structure
 ```
 .
