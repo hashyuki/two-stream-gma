@@ -4,7 +4,7 @@
 ## Overview
  <img src=img/overview.png><br>
  **Fig. 1.** Overview of the proposed GMs classification method<br>
- <img src+img/Table.png><br>
+ <img src=img/Table.png><br>
 ## folder structure
 ```
 .
