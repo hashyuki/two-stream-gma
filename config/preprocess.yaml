@@ -1,0 +1,30 @@
+cfg_name: preprocessing
+
+setting:
+  device_ids: [0, 1, 2]
+path:
+  root: data
+  model:
+    u2net: model/u2net.pth
+    openpose: model/body_pose_model.pth
+  fold: fold
+
+mov2img:
+  save_dir: org
+
+extract:
+  load_dir: org
+  save_dir: removed
+
+adjust:
+  load_dir: removed
+  save_dir: 224x224
+  stride: 30
+  size: [224, 224]
+  alpha: 0.8
+
+flow:
+  load_dir: 224x224
+  save_dir: 224x224_flow
+  num_stack: 150
+  fps: 6

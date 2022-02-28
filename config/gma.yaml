@@ -1,0 +1,44 @@
+cfg_name: gma
+
+setting:
+  seed: 2021
+  batch_size: 64
+  max_epochs: 500
+  num_gpu: [0, 1, 2]
+
+early_stopping:
+  patience: 10
+
+path:
+  data: data/fold
+  save: result
+  img: 224x224
+  flow: 224x224_flow
+
+dataset:
+  fps: 6
+  
+model:
+  s_conv: resnet50
+  t_conv: resnet50
+  pretrained: true
+  classifier: conv1x1    # original, conv1x1
+  num_stack: 30
+  num_class: 3
+
+criterion:
+  weight: null            # None
+  size_average: null      # None
+  ignore_index: -100 
+  reduce: null            # None
+  reduction: mean
+  
+optim:
+  lr: 1.0e-5
+  betas: [0.9, 0.999]     # for Adam
+  eps: 1.0e-08            # for Adam
+  amsgrad: true           # for Adam
+  weight_decay: 1.0e-04
+
+
+
