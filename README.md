@@ -1,6 +1,8 @@
 # Automated Classification of General Movements in Infants Using Two-stream Spatiotemporal Fusion Network
 ---
 
+This is the Pytorch implementation of our paper: [Automated Classification of General Movements in Infants Using a Two-stream Spatiotemporal Fusion Network](https://arxiv.org/abs/2207.03344), accepted at MICCAI 2022.
+
 ## Overview
  <img src=img/overview.png><br>
  **Fig. 1.** Overview of the proposed GMs classification method<br>
